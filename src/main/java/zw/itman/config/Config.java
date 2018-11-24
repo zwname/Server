@@ -27,19 +27,19 @@ public class Config {
         };
     }
 
-//    @Bean
-//    public CommandLineRunner commandLineRunner(ApplicationContext ctx){
-//        return args->{
-//
-//            System.out.println("bean的个数"+ctx.getBeanDefinitionCount());
-//            String [] names=ctx.getBeanDefinitionNames();
-//            Arrays.sort(names);
-//            for(String name:names){
-//                System.err.println(name);
-//            }
-//        };
-//
-//    }
+    @Bean
+    public CommandLineRunner commandLineRunner(ApplicationContext ctx){
+        return args->{
+
+            System.out.println("bean的个数"+ctx.getBeanDefinitionCount());
+            String [] names=ctx.getBeanDefinitionNames();
+            Arrays.sort(names);
+            for(String name:names){
+                System.err.println(name);
+            }
+        };
+
+    }
     @Bean
     public CommandLineRunner testA(){
         CommandLineRunner commandLineRunner=new CommandLineRunner() {
