@@ -18,3 +18,18 @@
 
 4.日志log4j
 		日志级别：trace debug info warn error fatal 默认info
+		
+		
+5.添加server依赖，可作为一个被访问的服务器，监听访问者信息
+ <!--引入admin server依赖-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-server</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+        <!--admin server的展示-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-server-ui</artifactId>
+            <version>1.5.6</version>
+        </dependency>
