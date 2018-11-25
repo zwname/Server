@@ -18,7 +18,6 @@
 	YAML：配置例子
     server:
       port: 8081
-
 3.配置对实体类属性赋值
 
 		1.实体类添加@Configuration	@ConfigurationProperties(prefix = "前缀名")
